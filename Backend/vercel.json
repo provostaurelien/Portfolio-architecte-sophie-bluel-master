@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/*.js": {
-      "includeFiles": ["swagger.yaml"]
+      "includeFiles": "swagger.yaml"
     }
   }
 }
