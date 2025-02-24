@@ -1,0 +1,37 @@
+0000000000000000000000000000000000000000 65bf6367d0b5f53e99be2a811f9b23e07919ae98 Provost Aurelien <Provostaurelien@gmail.com> 1724593972 +0200	commit (initial): Récupération des images via l'API
+65bf6367d0b5f53e99be2a811f9b23e07919ae98 228db0b12bf90504747f19db4e630ea500f338bf Provost Aurelien <Provostaurelien@gmail.com> 1724596296 +0200	commit: Création buttons
+228db0b12bf90504747f19db4e630ea500f338bf b2c55379dfb87d361de22f8811a45038f6835e91 Provost Aurelien <Provostaurelien@gmail.com> 1724600959 +0200	commit: Ajout du js pour le fltrage
+b2c55379dfb87d361de22f8811a45038f6835e91 f668c5ed927a0fe46306befeb974dacf19fff941 Provost Aurelien <Provostaurelien@gmail.com> 1724602553 +0200	commit: Gestion du bouton Tous + classe active
+f668c5ed927a0fe46306befeb974dacf19fff941 5f75fb426155c0d75659bdf4b157d963458683fe Provost Aurelien <Provostaurelien@gmail.com> 1724878778 +0200	commit: Construction html css login
+5f75fb426155c0d75659bdf4b157d963458683fe 69bf2445e4918e06e2ac048ebc71b48e959ba153 Provost Aurelien <Provostaurelien@gmail.com> 1724883402 +0200	commit: Ajout du js login + indentation + schisme js + validateur
+69bf2445e4918e06e2ac048ebc71b48e959ba153 d2f6de8ce4b88bb4804b30a4e48ea9fbb128f81d Provost Aurelien <Provostaurelien@gmail.com> 1725311778 +0200	commit: Ajout du logout et des changements mode admin
+d2f6de8ce4b88bb4804b30a4e48ea9fbb128f81d 4e5c9804ff2c34cf93fc6648c6ccbc019698a99b Provost Aurelien <Provostaurelien@gmail.com> 1725656651 +0200	commit: Création dauxieme page modale html+css + class visible
+4e5c9804ff2c34cf93fc6648c6ccbc019698a99b 05c137a992ba6827e3e2cbcdbcf7e26afec2d821 Provost Aurelien <Provostaurelien@gmail.com> 1725744899 +0200	commit: Rendu dynamique ouverture/fermeture modale
+05c137a992ba6827e3e2cbcdbcf7e26afec2d821 fe6c15fcdd2509a204914bcad98656bb90980078 Provost Aurelien <Provostaurelien@gmail.com> 1725831024 +0200	commit: Ajout récupération images + suppression via appel API
+fe6c15fcdd2509a204914bcad98656bb90980078 d0af4fc6172504ba9c3c2eb4a04d9f443365f990 Provost Aurelien <Provostaurelien@gmail.com> 1726426639 +0200	commit: Taitement des erreurs en console js et html
+d0af4fc6172504ba9c3c2eb4a04d9f443365f990 871701679b4baf3679bf27be0e9a903ba3cbebb5 Provost Aurelien <Provostaurelien@gmail.com> 1726700265 +0200	commit: Ajout du js pour la page 2 de la modale
+871701679b4baf3679bf27be0e9a903ba3cbebb5 59707ddadf701741f4c3507cfec46b50def92028 Provost Aurelien <Provostaurelien@gmail.com> 1726701115 +0200	commit: Validateur w3c ok
+59707ddadf701741f4c3507cfec46b50def92028 57c58cd8c35517f0c8bf2703167f12e81db4efa5 Provost Aurelien <Provostaurelien@gmail.com> 1727523729 +0200	commit: Modification des alert sur les formulaires et reprise de la validation formulaire
+57c58cd8c35517f0c8bf2703167f12e81db4efa5 57c58cd8c35517f0c8bf2703167f12e81db4efa5 Provost Aurelien <Provostaurelien@gmail.com> 1728134398 +0200	checkout: moving from main to Testcookies
+57c58cd8c35517f0c8bf2703167f12e81db4efa5 e958ada08ff3453e4cb01d58ceb49e194596aa45 Provost Aurelien <Provostaurelien@gmail.com> 1728538030 +0200	commit: Reprise css + verification mdp avant envoi API
+e958ada08ff3453e4cb01d58ceb49e194596aa45 7be5434612654e54ac876f703e9b2fc662df0e14 Provost Aurelien <Provostaurelien@gmail.com> 1728733402 +0200	commit: Création api.js pour les appels api images et filtres
+7be5434612654e54ac876f703e9b2fc662df0e14 031dcf32e61069f5de0d2455f81882caa6d7318c Provost Aurelien <Provostaurelien@gmail.com> 1729022490 +0200	commit: Finalisation api.js + nettoyage code
+031dcf32e61069f5de0d2455f81882caa6d7318c cb96fafbc9edb0d2a97c7244a63ae51a7b5d7de4 Provost Aurelien <Provostaurelien@gmail.com> 1730033778 +0100	commit: Rajout top bar
+cb96fafbc9edb0d2a97c7244a63ae51a7b5d7de4 d02bb34e6b2d80261e5109735453c743ef93d2e8 Provost Aurelien <Provostaurelien@gmail.com> 1730034449 +0100	commit: Reprise background
+d02bb34e6b2d80261e5109735453c743ef93d2e8 d02bb34e6b2d80261e5109735453c743ef93d2e8 Provost Aurelien <Provostaurelien@gmail.com> 1730034548 +0100	checkout: moving from Testcookies to TestModal
+d02bb34e6b2d80261e5109735453c743ef93d2e8 0000000000000000000000000000000000000000 Provost Aurelien <Provostaurelien@gmail.com> 1730034569 +0100	Branch: renamed refs/heads/TestModal to refs/heads/TestLocalStorage
+0000000000000000000000000000000000000000 d02bb34e6b2d80261e5109735453c743ef93d2e8 Provost Aurelien <Provostaurelien@gmail.com> 1730034569 +0100	Branch: renamed refs/heads/TestModal to refs/heads/TestLocalStorage
+d02bb34e6b2d80261e5109735453c743ef93d2e8 75169531a3aa7e8505db6d708e79d217153b27d3 Provost Aurelien <Provostaurelien@gmail.com> 1730035582 +0100	commit: Reprise fonctionnement local storage
+75169531a3aa7e8505db6d708e79d217153b27d3 75169531a3aa7e8505db6d708e79d217153b27d3 Provost Aurelien <Provostaurelien@gmail.com> 1730036024 +0100	checkout: moving from TestLocalStorage to TestLocalStorage
+75169531a3aa7e8505db6d708e79d217153b27d3 75169531a3aa7e8505db6d708e79d217153b27d3 Provost Aurelien <Provostaurelien@gmail.com> 1730036134 +0100	checkout: moving from TestLocalStorage to TestLocalStorage
+75169531a3aa7e8505db6d708e79d217153b27d3 57c58cd8c35517f0c8bf2703167f12e81db4efa5 Provost Aurelien <Provostaurelien@gmail.com> 1730036342 +0100	checkout: moving from TestLocalStorage to main
+57c58cd8c35517f0c8bf2703167f12e81db4efa5 75169531a3aa7e8505db6d708e79d217153b27d3 Provost Aurelien <Provostaurelien@gmail.com> 1730036373 +0100	merge TestLocalStorage: Fast-forward
+75169531a3aa7e8505db6d708e79d217153b27d3 d02bb34e6b2d80261e5109735453c743ef93d2e8 Provost Aurelien <Provostaurelien@gmail.com> 1730036567 +0100	checkout: moving from main to Testcookies
+d02bb34e6b2d80261e5109735453c743ef93d2e8 87ee23d611660a4d811cf7e7149b99b390767fc3 Provost Aurelien <Provostaurelien@gmail.com> 1730036624 +0100	commit: MAsquage du texte mode édition en non admin
+87ee23d611660a4d811cf7e7149b99b390767fc3 75169531a3aa7e8505db6d708e79d217153b27d3 Provost Aurelien <Provostaurelien@gmail.com> 1730036703 +0100	checkout: moving from Testcookies to main
+75169531a3aa7e8505db6d708e79d217153b27d3 87ee23d611660a4d811cf7e7149b99b390767fc3 Provost Aurelien <Provostaurelien@gmail.com> 1730036871 +0100	checkout: moving from main to Testcookies
+87ee23d611660a4d811cf7e7149b99b390767fc3 75169531a3aa7e8505db6d708e79d217153b27d3 Provost Aurelien <Provostaurelien@gmail.com> 1730036900 +0100	checkout: moving from Testcookies to main
+75169531a3aa7e8505db6d708e79d217153b27d3 7994eafb45ee870f1e09a096d493f91741d6e3a3 Provost Aurelien <Provostaurelien@gmail.com> 1730037600 +0100	commit: Correction W3c
+7994eafb45ee870f1e09a096d493f91741d6e3a3 87ee23d611660a4d811cf7e7149b99b390767fc3 Provost Aurelien <Provostaurelien@gmail.com> 1730037635 +0100	checkout: moving from main to Testcookies
+87ee23d611660a4d811cf7e7149b99b390767fc3 616100aa502d888db125414f707add26eeec9ce1 Provost Aurelien <Provostaurelien@gmail.com> 1730037812 +0100	commit: Correction w3c
+616100aa502d888db125414f707add26eeec9ce1 7994eafb45ee870f1e09a096d493f91741d6e3a3 Provost Aurelien <Provostaurelien@gmail.com> 1740384739 +0100	checkout: moving from Testcookies to main

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" >
+    <title>Sophie Bluel - Architecte d'intérieur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    >
+    <meta name="description" content="" >
+    <link rel="stylesheet" href="./assets/style.css" >
+    <!--Defer enlever suite à erreur w3c -->
+    <script type="module" src="./assets/admin.js" ></script>
+    <script type="module" src="./assets/index.js" ></script>
+    <script type="module" src="./assets/modal.js" ></script>
+    <!--  font awesome utiliser pour les icones sur la page-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    >
+  </head>
+  <body>
+    
+    <header>
+      <div class="top-bar">
+        <a  class="fa-regular fa-pen-to-square"></a> Mode édition
+      </div>
+      <div class="titleAndNav">
+      <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+      <nav>
+        <ul>
+          <li>projets</li>
+          <li>contact</li>
+          <!--  lien vers la page html login, chgt de nom et de fonction lorsque l'auth est présente-->
+          <li><a class="appBar_navItem" href="./login.html">login</a></li>
+          <!--  penser à rajouter lien vers instagram quand page insta disponible-->
+          <li><img src="./assets/icons/instagram.png" alt="Instagram" ></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <main>
+      <!--  section gardé malgré le warning w3c pour le web sémantique-->
+      <section id="introduction">
+        <figure>
+          <img src="./assets/images/sophie-bluel.png" alt="image de Sophie Bluel" >
+        </figure>
+        <article>
+          <h2>Designer d'espace</h2>
+          <p>
+            Je raconte votre histoire, je valorise vos idées. Je vous accompagne
+            de la conception à la livraison finale du chantier.
+          </p>
+          <p>
+            Chaque projet sera étudié en commun, de façon à mettre en valeur les
+            volumes, les matières et les couleurs dans le respect de l’esprit
+            des lieux et le choix adapté des matériaux. Le suivi du chantier
+            sera assuré dans le souci du détail, le respect du planning et du
+            budget.
+          </p>
+          <p>
+            En cas de besoin, une équipe pluridisciplinaire peut-être constituée
+            : architecte DPLG, décorateur(trice)
+          </p>
+        </article>
+      </section>
+      <section id="portfolio">
+        <div class="mesProjets">
+          <h2>Mes Projets</h2>
+        </div>
+        <!--ajout des boutons filtres sur la page, disparition en mode admin -->
+        <div class="filtres" id="filtre"></div>
+        <div class="gallery"></div>
+      </section>
+      <!--Formulaire de contact, manque code JS à revoir sur la V2 quand l'api le permettra-->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous avez un projet ? Discutons-en !</p>
+        <form action="#" method="post">
+          <label for="name">Nom</label>
+          <input type="text" name="name" id="name" >
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" >
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" value="Envoyer" >
+        </form>
+      </section>
+      <!--code pour la modale-->
+      <aside id="modal" class="modal">
+        <div class="modal-window">
+          <!--premiere fenetre modale accueil-->
+          <div class="modal-accueil">
+            <i class="fa-solid fa-xmark"></i>
+            <h3>Galerie photo</h3>
+            <div class="gallery-modal"></div>
+            <div class="separator"></div>
+            <button class="btn ajoutPhoto" type="button">
+              Ajouter une photo
+            </button>
+          </div>
+          <!--deuxieme fenere modale ajout photo-->
+          <div class="modal-ajout-photo">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-xmark"></i>
+            <h3>Ajout photo</h3>
+            <form action="#" method="post">
+              <div class="photo-upload">
+                <label for="photo-upload-input" class="photo-label">
+                  <i class="fa-regular fa-image"></i>
+                  <span>+ Ajouter photo</span>
+                  jpg, png : 4mo max
+                </label>
+                <input
+                  type="file"
+                  id="photo-upload-input"
+                  name="photo"
+                  accept="image/png, image/jpeg"
+                  hidden
+                >
+              </div>
+              <label for="Titre">Titre</label>
+              <input type="text" name="Titre" id="Titre" >
+              <label for="categorie">Catégorie</label>
+              <select name="categorie" id="categorie"></select>
+              <div id="erreur-formulaire" ></div>
+              <div class="separator"></div>
+              <input type="submit" value="Valider" >
+            </form>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <!--href à prévoir pour les mentions légales -->
+      <nav>
+        <ul>
+          <li>Mentions Légales</li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

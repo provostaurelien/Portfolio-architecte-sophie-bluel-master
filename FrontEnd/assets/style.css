@@ -1,0 +1,723 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** rajout display flex pour avoir le pied de page en base de page sur login**/
+body  {
+  max-width: 1140px;
+  margin: auto;
+  font-family: "Work Sans";
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FFFEF8;
+}
+
+main {
+  margin: 0px 60px;
+}
+
+section {
+  margin: 50px 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne";
+  font-size: 22px;
+  font-weight: 800;
+  color: #b1663c;
+}
+
+h1 > span {
+  font-family: "Work Sans";
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 30px;
+  color: #1d6154;
+}
+
+h3 {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 26px;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+
+li:hover {
+  color: #b1663c;
+}
+
+/* Gestion du header */
+/* Ajout de la barre noire lorsque le mode admin est actif */
+.top-bar {
+  display: none;
+}
+
+.top-bar.visible  {
+  position: absolute; /* fixed possible pour mainteni position lors du defilement*/
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: black;
+  /* Gestion du contenu texte + ancre de la top bar */
+  color: white;
+  font-size: 16px;
+  font-family: "Work Sans";
+  font-weight: 400;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+/* Gestion de l'icone de la top bar */
+.top-bar a {color: white;
+  font-size: 12px; /* Ajustez la taille selon vos besoins */
+  margin-right: 10px;
+}
+
+/* Gestion du bloc titre et barre navigation  */
+/* Gestion de la marge supplémentaire en mode admin */
+.titleAndNav.admin {
+  margin: 110px 0;
+}
+
+
+.titleAndNav{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.appBar_navItem {
+  text-decoration: none;
+  color: #000000;
+}
+/* Garde la couleur appliquée au survol */
+.appBar_navItem:hover {
+  color: #b1663c;
+}
+
+.appBar_navItem.active {
+  font-weight: 600;
+}
+
+/* Gestion du main */
+
+/* Gestion de l'introduction */
+
+#introduction {
+  display: flex;
+  align-items: center;
+  /** rajout margin pour coller à la maquette **/
+  margin-bottom: 120px;
+}
+#introduction figure {
+  flex: 1;
+}
+#introduction img {
+  display: block;
+  width: 80%;
+}
+
+#introduction article {
+  flex: 1;
+}
+#introduction h2 {
+  margin-bottom: 1em;
+}
+
+#introduction p {
+  margin-bottom: 0.5em;
+}
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.mesProjets {
+  display: flex;
+  justify-content: center;
+}
+
+/* Gestion des filtres */
+
+.filtres {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filtres button {
+  font-family: "Syne";
+  font-weight: 700;
+  color: #1d6154;
+  border: 2px solid;
+  border-color: #1d6154;
+  border-radius: 60px;
+  background-color: white;
+  text-align: center;
+  padding: 9px 20px;
+}
+
+.filtres button:hover {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  border: 2px solid;
+  border-radius: 60px;
+  text-align: center;
+}
+
+button.active {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  border: 2px solid;
+  border-radius: 60px;
+  text-align: center;
+  padding: 10px 49px;
+}
+
+/* Gestion de la galerie d'images */
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+
+
+/* Gestion de la partie admin avec apparition du lien modal */
+
+.edit-icon {
+  text-align: center;
+  padding: 8px;
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+  text-decoration: none; /* Enlève le soulignement du lien */
+  color: inherit;
+}
+/* ajuste l'espacement entre l'icone et le texte */
+.edit-icon i {
+  margin-right: 8px;
+}
+
+
+/* Gestion du formulaire de contact */
+
+#contact {
+  width: 50%;
+  margin: auto;
+}
+#contact > * {
+  text-align: center;
+}
+#contact h2 {
+  margin-bottom: 20px;
+}
+#contact form {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+  margin: 2em 0 1em 0;
+}
+#contact textarea {
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+#contact input[type="submit"] {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  margin: 2em auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
+}
+
+
+
+/* Gestion du footer */
+
+footer nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+
+
+
+
+
+
+
+/* Gestion de la modale */
+
+/* gestion de l'arrière plan de la modale */
+.modal {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+/* gestion de la fenêtre de la modale */
+.modal-window {
+  display: none;
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+  /* Permet de placer la croix de fermeture et la flèche  correctement*/
+  position: relative;
+}
+
+.modal button {
+  font-family: "Syne";
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 49px;
+  color: white;
+  background-color: #1d6154;
+  border: 2px solid;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.modal .fa-xmark {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  font-size: 20px;
+  color: #333;
+}
+
+.modal h3 {
+  margin: 40px 0px; /* Ajoute de l'espacement autour du titre */
+  text-align: center;
+}
+
+
+/* définition du trait au dessus du bouton */
+.separator {
+  height: 2px; /* Épaisseur du trait */
+  background-color: #ccc; /* Couleur du trait */
+  margin: 40px auto; /* Centre le trait horizontalement et ajoute de l'espace autour */
+}
+
+.modal-accueil,
+.modal-ajout-photo {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* spécificité de la page d'accueil */
+.modal-accueil {
+  margin: 0px 10%;
+}
+
+.modal-accueil .gallery-modal {
+  flex: 1; /* Prend l'espace restant pour centrer le titre et garder le bouton en bas */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+  grid-column-gap : 2%;
+  grid-row-gap: 15%;/*Espace entre les lignes de photo de la modale*/
+  margin-bottom: 40px;
+}
+
+.modal-accueil .gallery-modal img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Assure que l'image couvre l'espace de son conteneur sans se déformer */
+}
+
+/* Gestion des photos avec position de la poubelle */
+
+figure {
+  position: relative; /* Positionne le conteneur par rapport à ses enfants */
+  display: inline-block; /* Affiche le conteneur en ligne avec d'autres éléments */
+}
+
+figure img {
+  display: block; /* Pour éviter les espaces blancs sous les images */
+  width: 100%; /* Ajustez la taille de l'image si nécessaire */
+  height: auto;
+  object-fit: cover; /* Maintient les proportions de l'image */
+}
+
+.trash-icon {
+  position: absolute; /* Positionne l'icône de manière absolue par rapport au conteneur */
+  top: 5px; /* Ajustez la distance du haut si nécessaire */
+  right: 5px; /* Ajustez la distance de la droite si nécessaire */
+  cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+  color: white; /* Change la couleur de l'icône si besoin */
+  background-color: black;
+  font-size: 10px; /* Ajustez la taille de l'icône */
+  padding: 5px;
+}
+
+.modal-accueil .separator {
+  width: 80%;
+}
+
+/* definition du positionnement du bouton d'ajout photo */
+.modal-accueil .ajoutPhoto {
+  margin-top: auto; /* Positionne le bouton en bas de la modale */
+  align-self: center;
+}
+
+/* spécificité de la page d'ajout de photo */
+
+/* position de la flèche retour */
+
+.modal-ajout-photo .fa-arrow-left {
+  position: absolute;
+  top: 26px;
+  left: 30px;
+  font-size: 20px;
+  color: black;
+}
+
+/* definition du formulaire et de son contenu */
+.modal-ajout-photo form {
+  text-align: left;
+  margin: 0px 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gestion du cadre */
+
+.modal-ajout-photo .photo-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e8f1f6;
+}
+
+.modal-ajout-photo .photo-label {
+  display: flex;
+  flex-direction: column;
+  width: 450px; /* Largeur maximale du cadre */
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin: 0px;
+}
+/*Gestion de l'image uploadé pour éviter la modification du cadre*/
+
+.photo-label img {
+  max-width: 100%; /* Limite la largeur de l'image à la taille du cadre */
+  max-height: 100%; /* Limite la hauteur de l'image à la taille du cadre */
+  object-fit: cover;
+}
+
+.modal-ajout-photo .fa-image {
+  color: #b9c5cc;
+  font-size: 76px;
+  margin-top: 28px;
+}
+
+.modal-ajout-photo span {
+  background-color: #cbd6dc;
+  color: white;
+  align-self: center;
+  width: 60%;
+  font-family: "Work Sans";
+  font-size: 14px;
+  color: #306685;
+  text-align: center;
+  border-radius: 60px;
+  padding: 10px 40px;
+  margin: 10px 0px;
+}
+
+.modal-ajout-photo .photo-upload {
+  font-family: "Work Sans";
+  font-size: 12px;
+  color: #888; /* Couleur grise pour le texte */
+}
+
+#erreur-formulaire {
+  color: red;
+}
+/*Gestion des champs*/
+
+.modal-ajout-photo input,
+.modal-ajout-photo select {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  padding: 0px 10px;
+  color: #444444;
+}
+.modal-ajout-photo label {
+  font-size: 14px;
+  font-family: "Work Sans";
+  font-weight: 500;
+  margin: 2em 0 1em 0;
+}
+.modal-ajout-photo textarea {
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+/* propriété additionnel de la ligne de séparation */
+
+.modal-ajout-photo .separator {
+  width: 100%;
+}
+
+/* Gestion du bouton de validation */
+
+.modal-ajout-photo input[type="submit"] {
+  font-family: "Syne";
+  font-weight: 700;
+  background-color: #a7a7a7;
+  color: white;
+  align-self: center;
+  width: 60%;
+  text-align: center;
+  border-radius: 60px;
+  padding: 10px 49px;
+}
+
+/* Passage du bouton en vert quand les champ sont complets */
+
+.modal-ajout-photo input.complete {
+  background-color: #1d6154;
+}
+
+/* Gestion de la visibilité de la modale par le code js */
+
+.visible {
+  display: flex;
+}
+
+/* Gestion de la page Login*/
+
+#logIn {
+  width: 50%;
+  margin: auto;
+}
+#logIn > * {
+  text-align: center;
+}
+#logIn h2 {
+  margin-bottom: 20px;
+}
+#logIn form {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#logIn input {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#logIn label {
+  margin: 2em 0 1em 0;
+}
+
+#logIn a {
+  display: flex;
+  flex-direction: column;
+}
+
+#logIn input[type="submit"] {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  margin: 2em auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
+}
+
+#logIn p {
+  margin-top: 20px;
+  color: red;
+}

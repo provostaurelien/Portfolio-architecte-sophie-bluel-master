@@ -1,0 +1,16 @@
+0000000000000000000000000000000000000000 65bf6367d0b5f53e99be2a811f9b23e07919ae98 Provost Aurelien <Provostaurelien@gmail.com> 1724593972 +0200	commit (initial): Récupération des images via l'API
+65bf6367d0b5f53e99be2a811f9b23e07919ae98 228db0b12bf90504747f19db4e630ea500f338bf Provost Aurelien <Provostaurelien@gmail.com> 1724596296 +0200	commit: Création buttons
+228db0b12bf90504747f19db4e630ea500f338bf b2c55379dfb87d361de22f8811a45038f6835e91 Provost Aurelien <Provostaurelien@gmail.com> 1724600959 +0200	commit: Ajout du js pour le fltrage
+b2c55379dfb87d361de22f8811a45038f6835e91 f668c5ed927a0fe46306befeb974dacf19fff941 Provost Aurelien <Provostaurelien@gmail.com> 1724602553 +0200	commit: Gestion du bouton Tous + classe active
+f668c5ed927a0fe46306befeb974dacf19fff941 5f75fb426155c0d75659bdf4b157d963458683fe Provost Aurelien <Provostaurelien@gmail.com> 1724878778 +0200	commit: Construction html css login
+5f75fb426155c0d75659bdf4b157d963458683fe 69bf2445e4918e06e2ac048ebc71b48e959ba153 Provost Aurelien <Provostaurelien@gmail.com> 1724883402 +0200	commit: Ajout du js login + indentation + schisme js + validateur
+69bf2445e4918e06e2ac048ebc71b48e959ba153 d2f6de8ce4b88bb4804b30a4e48ea9fbb128f81d Provost Aurelien <Provostaurelien@gmail.com> 1725311778 +0200	commit: Ajout du logout et des changements mode admin
+d2f6de8ce4b88bb4804b30a4e48ea9fbb128f81d 4e5c9804ff2c34cf93fc6648c6ccbc019698a99b Provost Aurelien <Provostaurelien@gmail.com> 1725656651 +0200	commit: Création dauxieme page modale html+css + class visible
+4e5c9804ff2c34cf93fc6648c6ccbc019698a99b 05c137a992ba6827e3e2cbcdbcf7e26afec2d821 Provost Aurelien <Provostaurelien@gmail.com> 1725744899 +0200	commit: Rendu dynamique ouverture/fermeture modale
+05c137a992ba6827e3e2cbcdbcf7e26afec2d821 fe6c15fcdd2509a204914bcad98656bb90980078 Provost Aurelien <Provostaurelien@gmail.com> 1725831024 +0200	commit: Ajout récupération images + suppression via appel API
+fe6c15fcdd2509a204914bcad98656bb90980078 d0af4fc6172504ba9c3c2eb4a04d9f443365f990 Provost Aurelien <Provostaurelien@gmail.com> 1726426639 +0200	commit: Taitement des erreurs en console js et html
+d0af4fc6172504ba9c3c2eb4a04d9f443365f990 871701679b4baf3679bf27be0e9a903ba3cbebb5 Provost Aurelien <Provostaurelien@gmail.com> 1726700265 +0200	commit: Ajout du js pour la page 2 de la modale
+871701679b4baf3679bf27be0e9a903ba3cbebb5 59707ddadf701741f4c3507cfec46b50def92028 Provost Aurelien <Provostaurelien@gmail.com> 1726701115 +0200	commit: Validateur w3c ok
+59707ddadf701741f4c3507cfec46b50def92028 57c58cd8c35517f0c8bf2703167f12e81db4efa5 Provost Aurelien <Provostaurelien@gmail.com> 1727523729 +0200	commit: Modification des alert sur les formulaires et reprise de la validation formulaire
+57c58cd8c35517f0c8bf2703167f12e81db4efa5 75169531a3aa7e8505db6d708e79d217153b27d3 Provost Aurelien <Provostaurelien@gmail.com> 1730036373 +0100	merge TestLocalStorage: Fast-forward
+75169531a3aa7e8505db6d708e79d217153b27d3 7994eafb45ee870f1e09a096d493f91741d6e3a3 Provost Aurelien <Provostaurelien@gmail.com> 1730037600 +0100	commit: Correction W3c
